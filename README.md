@@ -23,3 +23,11 @@ Note the port number displayed, say PORT
 
 Repeat above 4 steps in another browser
 You can message back and forth between the two sessions
+
+## To be Implemented:
+
+List & Search users functionality
+Direct messaging between users
+Online/Offline status for users
+Log out all other users future
+Better UI using flutter
