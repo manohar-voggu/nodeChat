@@ -31,3 +31,6 @@ You can message back and forth between the two sessions
 * Online/Offline status for users
 * Log out all other users future
 * Better UI using flutter
+
+## Note:
+* U'll need a (Mongo Atlas)[https://www.mongodb.com/cloud/atlas] account. Copy the Database url and assign it to DB_CONNECT variable found in .env file
