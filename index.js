@@ -1,8 +1,10 @@
 const express = require("express");
-const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
+
+const app = express();
+app.disable("x-powered-by");
 
 //Import Routes
 const authRoute = require("./routes/auth");
@@ -28,3 +30,6 @@ app.use(express.static("./public"));
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
+
+// Notes:
+// https://expressjs.com/en/advanced/best-practice-security.html#at-a-minimum-disable-x-powered-by-header
