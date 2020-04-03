@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const morgan = require("morgan");
 
 //Import Routes
 const authRoute = require("./routes/auth");
@@ -17,6 +18,7 @@ mongoose.connect(
 );
 
 //Middleware
+app.use(morgan("dev"));
 app.use(express.json());
 //Route Middlewares
 app.use("/api/user", authRoute);
