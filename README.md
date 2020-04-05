@@ -29,7 +29,7 @@ You can message back and forth between the two sessions
 * List & Search users functionality
 * Direct messaging between users
 * Online/Offline status for users
-* Log out all other users future
+* Log out all other users feature
 * Better UI using flutter
 
 ## Note:
